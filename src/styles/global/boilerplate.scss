@@ -1,0 +1,67 @@
+@use "../utils/" as *;
+
+html {
+  height: 100%;
+  line-height: 1.15;
+  font-size: 100%;
+  display: block;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-publicSans);
+  font-size: rem(14);
+  height: 100%;
+  background-color: var(--neutral-lightGray);
+  letter-spacing: normal;
+  line-height: normal;
+  text-align: left;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: inherit;
+}
+
+.cta-button {
+  color: var(--neutral-lightGray);
+  background: linear-gradient(
+    to right,
+    var(--primary-limeGreen),
+    var(--primary-brightCyan)
+  );
+  font-weight: 700;
+  min-width: rem(165);
+  padding: rem(15) rem(25);
+  border-radius: rem(25);
+  &:hover {
+    cursor: pointer;
+  }
+}
+.hide-on-desktop {
+  display: flex;
+
+  @include breakpoint(medium) {
+    display: none;
+  }
+}
+.hide-on-mobile {
+  display: none;
+
+  @include breakpoint(medium) {
+    display: flex;
+  }
+}

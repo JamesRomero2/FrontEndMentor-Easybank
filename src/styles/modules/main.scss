@@ -1,0 +1,96 @@
+@use "../utils/" as *;
+
+.mainContainer {
+  display: flex;
+  z-index: 90;
+  flex-direction: column-reverse;
+  margin-bottom: rem(70);
+
+  @include breakpoint(medium) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: rem(0);
+  }
+
+  .leftSide {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    @include breakpoint(medium) {
+      display: flex;
+      text-align: left;
+      padding: 0;
+      margin: 0;
+      justify-content: flex-start;
+      align-items: flex-start;
+      max-width: rem(460);
+      max-height: rem(360);
+      padding-top: rem(130);
+    }
+
+    &__title {
+      font-size: var(--fs-xxlarge);
+      font-weight: 400;
+      padding: rem(10) 0;
+    }
+    &__about {
+      font-size: var(--fs-regular);
+      padding: rem(10) 0;
+      color: var(--neutral-grayBlue);
+      line-height: 1.5;
+    }
+    &__btn {
+      margin-top: rem(30);
+    }
+  }
+  .rightSide {
+    margin: 0;
+    padding: 0;
+
+    &__image {
+      position: relative;
+      background-image: url("https://res.cloudinary.com/blueshomepage/image/upload/v1646562028/frontendmentor/Easybank/svg/bg-intro-mobile_efzvri.svg");
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      min-height: rem(320);
+
+      &::before {
+        content: "";
+        height: 100%;
+        position: absolute;
+        background-image: url("https://res.cloudinary.com/blueshomepage/image/upload/v1646562010/frontendmentor/Easybank/images/image-mockups_syspha.png");
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: 86%;
+        width: 100%;
+        height: 100%;
+      }
+
+      @include breakpoint(medium) {
+        position: relative;
+        background-image: url("https://res.cloudinary.com/blueshomepage/image/upload/v1646562028/frontendmentor/Easybank/svg/bg-intro-desktop_rkauna.svg");
+        background-size: 150%;
+        background-position: 10% 125%;
+        background-repeat: no-repeat;
+        min-height: rem(800);
+        min-width: rem(850);
+
+        &::before {
+          content: "";
+          height: 100%;
+          position: absolute;
+          background-image: url("https://res.cloudinary.com/blueshomepage/image/upload/v1646562010/frontendmentor/Easybank/images/image-mockups_syspha.png");
+          background-position: 200px 100%;
+          background-repeat: no-repeat;
+          background-size: 90%;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

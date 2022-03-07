@@ -1,0 +1,32 @@
+@use "../utils/" as *;
+
+.container,
+.headerContainer,
+.mainInnerContainer,
+.summaryContainer,
+.cardContainer {
+  padding: 0 rem(20);
+
+  @include breakpoint(small) {
+    padding: 0 rem(30);
+  }
+  @include breakpoint(medium) {
+    padding: 0 rem(100);
+  }
+  @include breakpoint(large) {
+    padding: 0 rem(120);
+  }
+}
+.mainContainer {
+  padding-left: 0;
+
+  @include breakpoint(small) {
+    padding-left: 0;
+  }
+  @include breakpoint(medium) {
+    padding-left: rem(100);
+  }
+  @include breakpoint(large) {
+    padding-left: rem(120);
+  }
+}

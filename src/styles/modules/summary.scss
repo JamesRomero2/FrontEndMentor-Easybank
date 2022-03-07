@@ -1,0 +1,92 @@
+@use "../utils/" as *;
+
+.summaryOuterContainer {
+  background-color: var(--neutral-lightGrayBlue);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: rem(40);
+  padding: rem(80) 0;
+
+  @include breakpoint(medium) {
+    margin-top: rem(-130);
+    text-align: left;
+  }
+
+  .question {
+    font-size: var(--fs-xlarge);
+    display: block;
+    padding-bottom: rem(26);
+
+    @include breakpoint(medium) {
+      padding-bottom: rem(10);
+    }
+
+    > span {
+      display: block;
+      @include breakpoint(medium) {
+        display: inline;
+      }
+    }
+  }
+  .answer {
+    font-size: var(--fs-medium);
+    color: var(--neutral-grayBlue);
+    line-height: 1.5;
+    > span {
+      display: inline;
+      @include breakpoint(medium) {
+        display: block;
+      }
+    }
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: rem(40);
+
+    @include breakpoint(medium) {
+      flex-direction: row;
+      justify-content: space-between;
+      gap: rem(0);
+    }
+  }
+
+  .onlineCard,
+  .simpleCard,
+  .fastCard,
+  .openCard {
+    @include breakpoint(medium) {
+      max-width: rem(265);
+    }
+  }
+  .onlineCard__logo,
+  .simpleCard__logo,
+  .fastCard__logo,
+  .openCard__logo {
+    position: relative;
+    width: 100%;
+    min-width: rem(70);
+    min-height: rem(70);
+
+    @include breakpoint(medium) {
+      width: 10%;
+    }
+  }
+  .onlineCard__title,
+  .simpleCard__title,
+  .fastCard__title,
+  .openCard__title {
+    font-size: var(--fs-regular);
+    padding: rem(26) 0;
+  }
+  .onlineCard__summary,
+  .simpleCard__summary,
+  .fastCard__summary,
+  .openCard__summary {
+    font-size: var(--fs-medium);
+    color: var(--neutral-grayBlue);
+    line-height: 1.5;
+  }
+}

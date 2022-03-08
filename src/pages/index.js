@@ -21,7 +21,7 @@ const Index = () => {
       </Head>
       <header className="headerContainer">
         <div className="logoContainer">
-          <Image src="https://res.cloudinary.com/blueshomepage/image/upload/v1646562032/frontendmentor/Easybank/svg/logo_ijdhd3.svg" layout="fill" objectFit="contain" alt="Easybank logo" priority/>
+          <Image src="https://res.cloudinary.com/blueshomepage/image/upload/v1646562032/frontendmentor/Easybank/svg/logo_ijdhd3.svg" layout="fill" objectFit="contain" alt="Easybank logo"/>
         </div>
         {
           toggleNav && (
@@ -133,6 +133,136 @@ const Index = () => {
           </div>
         </div>
       </section>
+      
+      <section className="articleContainer">
+        <div className="articleInnerContainer">
+          <p className="articleTitle">Latest Articles</p>
+          <div className="articleCard">
+            <div className="articleCard__global">
+              <div className="articleCard__image">
+                <Image src={'https://res.cloudinary.com/blueshomepage/image/upload/v1646562010/frontendmentor/Easybank/images/image-currency_nhrdgm.jpg'} layout="fill" objectFit="cover" alt="Easybank article image money"/>
+              </div>
+              <article className="articleCard__article">
+                <p className="articleCard__author">
+                  By Claire Robinson
+                </p>
+                <p className="articleCard__title">
+                  Receive money in any currency with no fees
+                </p>
+                <p className="articleCard__context">
+                  The world is getting smaller and we’re becoming more mobile. So why should you be forced to only receive money in a single …
+                </p>
+              </article>
+            </div>
+
+            <div className="articleCard__global">
+              <div className="articleCard__image">
+                <Image src={'https://res.cloudinary.com/blueshomepage/image/upload/v1646562010/frontendmentor/Easybank/images/image-restaurant_a2xsjv.jpg'} layout="fill" objectFit="cover" alt="Easybank article image food"/>
+              </div>
+              <article className="articleCard__article">
+                <p className="articleCard__author">
+                  By Wilson Hutton
+                </p>
+                <p className="articleCard__title">
+                  Treat yourself without worrying about money
+                </p>
+                <p className="articleCard__context">
+                  Our simple budgeting feature allows you to separate out your spending and set realistic limits each month. That means you …
+                </p>
+              </article>
+            </div>
+
+            <div className="articleCard__global">
+              <div className="articleCard__image">
+                <Image src={'https://res.cloudinary.com/blueshomepage/image/upload/v1646562010/frontendmentor/Easybank/images/image-plane_rigwcg.jpg'} layout="fill" objectFit="cover" alt="Easybank article image plane"/>
+              </div>
+              <article className="articleCard__article">
+                <p className="articleCard__author">
+                  By Wilson Hutton
+                </p>
+                <p className="articleCard__title">
+                  Take your Easybank card wherever you go
+                </p>
+                <p className="articleCard__context">
+                  We want you to enjoy your travels. This is why we don’t charge any fees on purchases while you’re abroad. We’ll even show you …
+                </p>
+              </article>
+            </div>
+
+            <div className="articleCard__global">
+              <div className="articleCard__image">
+                <Image src={'https://res.cloudinary.com/blueshomepage/image/upload/v1646562010/frontendmentor/Easybank/images/image-confetti_uticrl.jpg'} layout="fill" objectFit="cover" alt="Easybank article image party"/>
+              </div>
+              <article className="articleCard__article">
+                <p className="articleCard__author">
+                  By Claire Robinson
+                </p>
+                <p className="articleCard__title">
+                  Our invite-only Beta accounts are now live!
+                </p>
+                <p className="articleCard__context">
+                  After a lot of hard work by the whole team, we’re excited to launch our closed beta. It’s easy to request an invite through the site ...
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer className="footerOuterContainer">
+        <div className="footerContainer">
+          <div className="outerLeft">
+            <div className="footer__left">
+              <div className="footer__logo">
+                <div className="footer__logoContainer">
+                  <Image src="https://res.cloudinary.com/blueshomepage/image/upload/v1646562032/frontendmentor/Easybank/svg/logo_ijdhd3.svg" layout="fill" objectFit="contain" alt="Easybank logo"/>
+                </div>
+              </div>
+              <div className="socialMedias">
+                <div className="socialMedias__container">
+                  <Image src="https://res.cloudinary.com/blueshomepage/image/upload/v1646562028/frontendmentor/Easybank/svg/icon-facebook_zvfzld.svg" layout="fill" objectFit="contain" alt="Facebook"/>
+                </div>
+                <div className="socialMedias__container">
+                  <Image src="https://res.cloudinary.com/blueshomepage/image/upload/v1646562028/frontendmentor/Easybank/svg/icon-youtube_fpvxbh.svg" layout="fill" objectFit="contain" alt="Youtube"/>
+                </div>
+                <div className="socialMedias__container">
+                  <Image src="https://res.cloudinary.com/blueshomepage/image/upload/v1646562032/frontendmentor/Easybank/svg/icon-twitter_bwk5em.svg" layout="fill" objectFit="contain" alt="Twitter"/>
+                </div>
+                <div className="socialMedias__container">
+                  <Image src="https://res.cloudinary.com/blueshomepage/image/upload/v1646562031/frontendmentor/Easybank/svg/icon-pinterest_y1wshd.svg" layout="fill" objectFit="contain" alt="Pinterest"/>
+                </div>
+                <div className="socialMedias__container">
+                  <Image src="https://res.cloudinary.com/blueshomepage/image/upload/v1646562030/frontendmentor/Easybank/svg/icon-instagram_ujizol.svg" layout="fill" objectFit="contain" alt="Instagram"/>
+                </div>
+              </div>
+            </div>
+            <div className="footer__middle">
+              <div className="footer__middle__nav">
+                <div className="footer__middle__nav__left">
+                  <ul className="footer__middle__nav__left__list">
+                    <li>About Us</li>
+                    <li>Contact</li>
+                    <li>Blog</li>
+                  </ul>
+                </div>
+                <div className="footer__middle__nav__right">
+                  <ul className="footer__middle__nav__right__list">
+                    <li>Careers</li>
+                    <li>Support</li>
+                    <li>Privacy Policy</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="footer__right">
+            <button type="button" className="headerCTABtn cta-button">
+              Request Invite
+            </button>
+            <p className="copyright">&copy; Easybank. All Rights Reserved</p>
+          </div>
+        </div>
+      </footer>
 
     </>
   )

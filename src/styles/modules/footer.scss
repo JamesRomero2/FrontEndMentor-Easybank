@@ -1,0 +1,136 @@
+@use "../utils/" as *;
+
+.footerOuterContainer {
+  background-color: var(--primary-darkBlue);
+  padding: rem(50) 0;
+  width: 100%;
+
+  .footerContainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    gap: rem(30);
+
+    @include breakpoint(medium) {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+
+    .outerLeft {
+      display: flex;
+      flex-direction: column;
+      gap: rem(30);
+      align-items: center;
+
+      @include breakpoint(medium) {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: rem(135);
+      }
+    }
+  }
+
+  .footer__left {
+    display: flex;
+    flex-direction: column;
+    gap: rem(30);
+
+    @include breakpoint(medium) {
+      align-items: flex-start;
+      flex-direction: column;
+      gap: rem(35);
+    }
+
+    .footer__logo {
+      padding: rem(10);
+      border-radius: rem(25);
+      background-color: var(--neutral-white);
+
+      .footer__logoContainer {
+        position: relative;
+        min-width: rem(160);
+        min-height: rem(22);
+      }
+    }
+
+    .socialMedias {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      @include breakpoint(medium) {
+        gap: rem(12);
+      }
+
+      &__container {
+        position: relative;
+        min-width: rem(25);
+        min-height: rem(25);
+      }
+    }
+  }
+  .footer__middle {
+    display: flex;
+    align-items: center;
+    color: var(--neutral-white);
+
+    @include breakpoint(medium) {
+      align-items: flex-start;
+    }
+
+    &__nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      gap: rem(30);
+
+      @include breakpoint(medium) {
+        flex-direction: row;
+        text-align: left;
+        align-items: flex-start;
+        gap: rem(30);
+      }
+
+      &__left {
+        &__list {
+          display: flex;
+          flex-direction: column;
+          gap: rem(24);
+          padding: 0;
+          margin: 0;
+        }
+      }
+      &__right {
+        &__list {
+          display: flex;
+          flex-direction: column;
+          gap: rem(24);
+          padding: 0;
+          margin: 0;
+        }
+      }
+    }
+  }
+  .footer__right {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: rem(30);
+
+    @include breakpoint(medium) {
+      height: 100%;
+      align-items: flex-end;
+      justify-content: flex-start;
+      gap: rem(35);
+    }
+
+    .copyright {
+      color: var(--neutral-grayBlue);
+      font-size: var(--fs-small);
+    }
+  }
+}

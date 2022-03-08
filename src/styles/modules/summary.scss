@@ -7,6 +7,7 @@
   flex-direction: column;
   gap: rem(40);
   padding: rem(80) 0;
+  width: 100%;
 
   @include breakpoint(medium) {
     margin-top: rem(-130);

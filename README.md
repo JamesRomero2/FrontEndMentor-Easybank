@@ -11,11 +11,10 @@ This is a solution to the [Easybank landing page challenge on Frontend Mentor](h
 
 - Semantic HTML5 markup
 - CSS custom properties
-- Flexbox
-- CSS Grid
+- CSS Flexbox
 - Mobile-first workflow
-- SASS/SCSS
-- framer-motion
+- [SASS/SCSS](https://sass-lang.com/) - CSS Preprocessor
+- [framer-motion](https://www.framer.com/motion/) - React Animation and gesture library
 - [React](https://reactjs.org/) - JS library
 - [Next.js](https://nextjs.org/) - React framework
 

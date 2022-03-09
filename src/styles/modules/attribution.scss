@@ -1,0 +1,12 @@
+.attribution {
+  display: block;
+  background-color: black;
+  color: white;
+  font-size: 11px;
+  text-align: center;
+  padding: 5px 0;
+
+  > a {
+    color: hsl(228, 45%, 44%);
+  }
+}
